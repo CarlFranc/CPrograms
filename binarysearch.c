@@ -49,24 +49,16 @@ void binarySearch(int *input, int target, int size) {
     int lower_bound = 0;
     int middle;
     while (1) {
-
         middle = (upper_bound + lower_bound) / 2;
-
         if(upper_bound == lower_bound && input[upper_bound] != target) {
             printf("\nNot found!");
             break;
         }
-
         if (input[middle] < target) {
-
             lower_bound = middle + 1;
-
         } else if (input[middle] > target) {
-
             upper_bound = middle - 1;
-
         } else if (input[middle] == target) {
-
             printf("\n Upper bound value: %i \n Lower bound value: %i", upper_bound, lower_bound);
             printf("\nElement at: %i", middle);
             break;
