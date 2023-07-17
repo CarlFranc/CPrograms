@@ -62,6 +62,6 @@ void binarySearch(int *input, int target, int size) {
         }
     }
 
-    printf("\nValue not found!");
+    printf("\nValue not found!\n");
     
 }
